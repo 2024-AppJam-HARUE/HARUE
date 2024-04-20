@@ -51,6 +51,8 @@
             <TextView
                 android:id="@+id/otherRanking01"
                 android:layout_width="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toTopOf="@+id/otherRankingPanel01"
                 app:layout_constraintStart_toStartOf="parent"
@@ -64,9 +66,9 @@
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 app:layout_constraintTop_toTopOf="@+id/otherRankingPanel01"
-                app:layout_constraintStart_toStartOf="@+id/otherRankingPanel01"
+                app:layout_constraintStart_toEndOf="@+id/otherRanking01"
                 app:layout_constraintBottom_toBottomOf="@+id/otherRankingPanel01"
-                android:layout_marginLeft="62dp"
+                android:layout_marginLeft="5dp"
                 android:src="@drawable/icon"
                 android:background="@color/lightgray"/>
             <TextView
@@ -74,9 +76,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toTopOf="@+id/otherRankingPanel01"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/otherNameId01"
                 app:layout_constraintBottom_toBottomOf="@+id/otherRankingPanel01"
-                android:layout_marginLeft="151dp"
+                android:layout_marginLeft="5dp"
                 android:text="#1234"
                 android:textSize="16dp"
                 android:textColor="@color/skyblue"/>
@@ -85,9 +87,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toTopOf="@+id/otherRankingPanel01"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/otherFace01"
                 app:layout_constraintBottom_toBottomOf="@+id/otherRankingPanel01"
-                android:layout_marginLeft="104dp"
+                android:layout_marginLeft="10dp"
                 android:text="엄준식"
                 android:textSize="16dp"
                 android:textColor="@color/black"/>
@@ -129,9 +131,9 @@
         android:layout_width="32dp"
         android:layout_height="32dp"
         app:layout_constraintTop_toTopOf="@+id/myRankingPanel"
-        app:layout_constraintStart_toStartOf="@+id/TitlePanel"
+        app:layout_constraintStart_toEndOf="@+id/myRanking"
         app:layout_constraintBottom_toBottomOf="@+id/myRankingPanel"
-        android:layout_marginLeft="57.5dp"
+        android:layout_marginLeft="5dp"
         android:src="@drawable/icon"
         android:background="@drawable/circle"/>
     <TextView
@@ -139,9 +141,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="@+id/myRankingPanel"
-        app:layout_constraintStart_toStartOf="@+id/TitlePanel"
+        app:layout_constraintStart_toEndOf="@+id/myFace"
         app:layout_constraintBottom_toBottomOf="@+id/myRankingPanel"
-        android:layout_marginLeft="104dp"
+        android:layout_marginLeft="10dp"
         android:text="엄준식"
         android:textSize="16dp"
         android:textColor="@color/white"/>
@@ -150,9 +152,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="@+id/myRankingPanel"
-        app:layout_constraintStart_toStartOf="@+id/TitlePanel"
+        app:layout_constraintStart_toEndOf="@+id/myName"
         app:layout_constraintBottom_toBottomOf="@+id/myRankingPanel"
-        android:layout_marginLeft="151dp"
+        android:layout_marginLeft="5dp"
         android:text="#1234"
         android:textSize="16dp"
         android:textColor="@color/skyblue"/>
