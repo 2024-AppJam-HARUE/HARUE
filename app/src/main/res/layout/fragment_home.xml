@@ -24,7 +24,8 @@
                 app:layout_constraintTop_toTopOf="parent"
                 android:layout_marginTop="14dp"
                 android:textSize="20sp"
-                android:text="그룹명"/>
+                android:textColor="@color/black"
+                android:text="하루살이"/>
             <ImageView
                 android:id="@+id/calender"
                 android:layout_width="match_parent"
@@ -42,7 +43,8 @@
                 android:layout_marginTop="14dp"
                 android:layout_marginLeft="26dp"
                 android:textSize="20sp"
-                android:text="금주의 명화"/>
+                android:textColor="@color/black"
+                android:text="금주의 개발"/>
             <!--여기 사이즈 이상함;;-->
             <ImageButton
                 android:id="@+id/button01"
@@ -69,6 +71,7 @@
                 android:layout_marginTop="14dp"
                 android:layout_marginLeft="26dp"
                 android:textSize="20sp"
+                android:textColor="@color/black"
                 android:text="랭킹"/>
             <!--여기 사이즈 이상함;;-->
             <ImageButton
@@ -95,7 +98,8 @@
                     app:layout_constraintEnd_toStartOf="@id/userFace01"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@id/rankingPanel01"
-                    android:text="n위"
+                    android:text="1위"
+                    android:textColor="@color/black"
                     android:textSize="24sp"/>
                 <ImageView
                     android:id="@+id/userFace01"
@@ -117,13 +121,14 @@
                     app:layout_constraintStart_toStartOf="@id/rankingPanel01"
                     app:layout_constraintTop_toTopOf="@id/rankingPanel01"
                     app:layout_constraintHorizontal_bias="0.3"
-                    android:text="엄준식"
+                    android:text="이설아"
+                    android:textColor="@color/black"
                     android:textSize="16sp"/>
                 <TextView
                     android:id="@+id/rankNameId01"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="#1234"
+                    android:text="#1206"
                     android:textColor="@color/skyblue"
                     android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="@id/rankingPanel01"
@@ -136,6 +141,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="123456789"
+                    android:textColor="@color/black"
                     android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="@id/rankingPanel01"
                     app:layout_constraintEnd_toEndOf="@id/rankingPanel01"
@@ -158,7 +164,8 @@
                     app:layout_constraintEnd_toStartOf="@id/userFace02"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@id/rankingPanel02"
-                    android:text="n위"
+                    android:text="2위"
+                    android:textColor="@color/black"
                     android:textSize="24sp"/>
                 <ImageView
                     android:id="@+id/userFace02"
@@ -180,13 +187,14 @@
                     app:layout_constraintStart_toStartOf="@id/rankingPanel02"
                     app:layout_constraintTop_toTopOf="@id/rankingPanel02"
                     app:layout_constraintHorizontal_bias="0.3"
-                    android:text="엄준식"
+                    android:text="이진식"
+                    android:textColor="@color/black"
                     android:textSize="16sp"/>
                 <TextView
                     android:id="@+id/rankNameId02"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="#1234"
+                    android:text="#0211"
                     android:textColor="@color/skyblue"
                     android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="@id/rankingPanel02"
@@ -199,6 +207,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="123456789"
+                    android:textColor="@color/black"
                     android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="@id/rankingPanel02"
                     app:layout_constraintEnd_toEndOf="@id/rankingPanel02"
@@ -221,7 +230,8 @@
                     app:layout_constraintEnd_toStartOf="@id/userFace03"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@id/rankingPanel03"
-                    android:text="n위"
+                    android:text="3위"
+                    android:textColor="@color/black"
                     android:textSize="24sp"/>
                 <ImageView
                     android:id="@+id/userFace03"
@@ -243,13 +253,14 @@
                     app:layout_constraintStart_toStartOf="@id/rankingPanel03"
                     app:layout_constraintTop_toTopOf="@id/rankingPanel03"
                     app:layout_constraintHorizontal_bias="0.3"
-                    android:text="엄준식"
+                    android:text="곽현민"
+                    android:textColor="@color/black"
                     android:textSize="16sp"/>
                 <TextView
                     android:id="@+id/rankNameId03"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="#1234"
+                    android:text="#0930"
                     android:textColor="@color/skyblue"
                     android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="@id/rankingPanel03"
@@ -262,6 +273,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="123456789"
+                    android:textColor="@color/black"
                     android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="@id/rankingPanel03"
                     app:layout_constraintEnd_toEndOf="@id/rankingPanel03"
@@ -277,6 +289,7 @@
                 android:layout_marginTop="14dp"
                 android:layout_marginLeft="26dp"
                 android:textSize="20sp"
+                android:textColor="@color/black"
                 android:text="하루가 추천하는 버킷리스트"/>
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/bucketListPanel01"
@@ -295,13 +308,15 @@
                     app:layout_constraintTop_toTopOf="@id/bucketListPanel01"
                     app:layout_constraintBottom_toBottomOf="@id/bucketListPanel01"
                     android:textSize="24sp"
-                    android:text="n."/>
+                    android:textColor="@color/black"
+                    android:text="1."/>
 
                 <TextView
                     android:id="@+id/bucketListTitle01"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="멀리뛰기"
+                    android:text="번지점프"
+                    android:textColor="@color/black"
                     android:textSize="24sp"
                     app:layout_constraintBottom_toBottomOf="@id/bucketListPanel01"
                     app:layout_constraintEnd_toEndOf="@id/bucketListPanel01"
@@ -312,14 +327,14 @@
                     android:id="@+id/bucketListSubTitle01"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="건강을 챙길 수 있어요"
+                    android:text="수명을 앞당길 수 있어요"
                     android:textColor="@color/salmon"
                     android:textSize="12sp"
                     app:layout_constraintBottom_toBottomOf="@id/bucketListTitle01"
-                    app:layout_constraintEnd_toEndOf="@id/bucketListPanel01"
-                    app:layout_constraintHorizontal_bias="0.4"
-                    app:layout_constraintStart_toStartOf="parent"/>
+                    android:layout_marginLeft="3dp"
+                    app:layout_constraintStart_toEndOf="@+id/bucketListTitle01"/>
             </androidx.constraintlayout.widget.ConstraintLayout>
+
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/bucketListPanel02"
                 android:layout_width="match_parent"
@@ -327,41 +342,45 @@
                 android:layout_marginTop="3dp"
                 android:background="@color/lightgray"
                 app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/bucketListPanel01">
+
                 <TextView
                     android:id="@+id/bucketListNumber02"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toStartOf="@id/bucketListTitle02"
-                    app:layout_constraintTop_toTopOf="@id/bucketListPanel02"
-                    app:layout_constraintBottom_toBottomOf="@id/bucketListPanel02"
+                    android:text="2."
+                    android:textColor="@color/black"
                     android:textSize="24sp"
-                    android:text="n."/>
+                    app:layout_constraintBottom_toBottomOf="@id/bucketListPanel02"
+                    app:layout_constraintEnd_toStartOf="@id/bucketListTitle02"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/bucketListPanel02" />
 
                 <TextView
                     android:id="@+id/bucketListTitle02"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="멀리뛰기"
+                    android:text="겨울에 야외수영"
+                    android:textColor="@color/black"
                     android:textSize="24sp"
                     app:layout_constraintBottom_toBottomOf="@id/bucketListPanel02"
                     app:layout_constraintEnd_toEndOf="@id/bucketListPanel02"
                     app:layout_constraintHorizontal_bias="0.1"
                     app:layout_constraintStart_toStartOf="@id/bucketListPanel02"
                     app:layout_constraintTop_toTopOf="@id/bucketListPanel02" />
+
                 <TextView
                     android:id="@+id/bucketListSubTitle02"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="건강을 챙길 수 있어요"
+                    android:layout_marginLeft="3dp"
+                    android:text="시원해질 수 있어요"
                     android:textColor="@color/salmon"
                     android:textSize="12sp"
                     app:layout_constraintBottom_toBottomOf="@id/bucketListTitle02"
-                    app:layout_constraintEnd_toEndOf="@id/bucketListPanel02"
-                    app:layout_constraintHorizontal_bias="0.4"
-                    app:layout_constraintStart_toStartOf="parent"/>
-            </androidx.constraintlayout.widget.ConstraintLayout>
+                    app:layout_constraintStart_toEndOf="@+id/bucketListTitle02" />
+            </androidx.constraintlayout.widget.ConstraintLayout
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/bucketListPanel03"
                 android:layout_width="match_parent"
@@ -379,14 +398,16 @@
                     app:layout_constraintTop_toTopOf="@id/bucketListPanel03"
                     app:layout_constraintBottom_toBottomOf="@id/bucketListPanel03"
                     android:textSize="24sp"
-                    android:text="n."/>
+                    android:textColor="@color/black"
+                    android:text="3."/>
 
                 <TextView
                     android:id="@+id/bucketListTitle03"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="멀리뛰기"
+                    android:text="메인에 커밋하기"
                     android:textSize="24sp"
+                    android:textColor="@color/black"
                     app:layout_constraintBottom_toBottomOf="@id/bucketListPanel03"
                     app:layout_constraintEnd_toEndOf="@id/bucketListPanel03"
                     app:layout_constraintHorizontal_bias="0.1"
@@ -396,13 +417,12 @@
                     android:id="@+id/bucketListSubTitle03"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="건강을 챙길 수 있어요"
+                    android:text="메인 개발자가 될 수 있어요"
                     android:textColor="@color/salmon"
                     android:textSize="12sp"
                     app:layout_constraintBottom_toBottomOf="@id/bucketListTitle03"
-                    app:layout_constraintEnd_toEndOf="@id/bucketListPanel03"
-                    app:layout_constraintHorizontal_bias="0.4"
-                    app:layout_constraintStart_toStartOf="parent"/>
+                    android:layout_marginLeft="3dp"
+                    app:layout_constraintStart_toEndOf="@+id/bucketListTitle03"/>/>
             </androidx.constraintlayout.widget.ConstraintLayout>
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"

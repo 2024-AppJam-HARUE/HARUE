@@ -41,7 +41,7 @@
             android:layout_marginLeft="146dp"
             android:layout_marginTop="64dp"
             app:layout_constraintTop_toTopOf="@+id/profilePanel"
-            android:text="이름 : 엄준식"
+            android:text="이름 : 이설아"
             android:textSize="16dp"
             android:textColor="@color/black"/>
         <TextView
@@ -81,7 +81,7 @@
             android:layout_marginLeft="31dp"
             android:layout_marginTop="40dp"
             android:textSize="16dp"
-            android:text="#1234"
+            android:text="#1206"
             android:textColor="@color/tomato"
             app:layout_constraintTop_toTopOf="@id/idPanel"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -108,7 +108,7 @@
             android:id="@+id/value01"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="12345P"
+            android:text="1등"
             android:textSize="13dp"
             app:layout_constraintStart_toStartOf="@id/pointPanel"
             app:layout_constraintEnd_toStartOf="@id/partition01"
