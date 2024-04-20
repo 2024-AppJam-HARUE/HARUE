@@ -8,18 +8,23 @@
     <fragment
         android:id="@+id/navigation_home"
         android:name="com.example.harue.ui.home.HomeFragment"
-        android:label="@string/title_home"
+        android:label="home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/navigation_my_page"
         android:name="com.example.harue.ui.my_page.MyPageFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:label="my_page"
+        tools:layout="@layout/fragment_my_page" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/navigation_calender"
         android:name="com.example.harue.ui.calender.CalenderFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:label="calender"
+        tools:layout="@layout/fragment_calender" />
+    <fragment
+        android:id="@+id/navigation_rank"
+        android:name="com.example.harue.ui.rank.RankFragment"
+        android:label="rank"
+        tools:layout="@layout/fragment_rank" />
 </navigation>
