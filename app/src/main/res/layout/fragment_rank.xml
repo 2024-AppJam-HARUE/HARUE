@@ -58,7 +58,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintBottom_toBottomOf="@+id/otherRankingPanel01"
                 android:layout_marginLeft="10dp"
-                android:text="n위"
+                android:text="1위"
                 android:textSize="24dp"
                 android:textColor="@color/black"/>
             <ImageView
@@ -90,7 +90,7 @@
                 app:layout_constraintStart_toEndOf="@+id/otherFace01"
                 app:layout_constraintBottom_toBottomOf="@+id/otherRankingPanel01"
                 android:layout_marginLeft="10dp"
-                android:text="엄준식"
+                android:text="이현지"
                 android:textSize="16dp"
                 android:textColor="@color/black"/>
             <TextView
@@ -105,7 +105,6 @@
                 android:textSize="16dp"
                 android:textColor="@color/black"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
-
     </androidx.core.widget.NestedScrollView>
 
     <ImageView
