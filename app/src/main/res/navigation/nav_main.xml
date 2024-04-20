@@ -21,10 +21,23 @@
         android:id="@+id/navigation_calender"
         android:name="com.example.harue.ui.calender.CalenderFragment"
         android:label="calender"
-        tools:layout="@layout/fragment_calender" />
+        tools:layout="@layout/fragment_calender" >
+        <action
+            android:id="@+id/action_navigation_calender_to_calenderClear"
+            app:destination="@id/calenderClear" />
+    </fragment>
     <fragment
         android:id="@+id/navigation_rank"
         android:name="com.example.harue.ui.rank.RankFragment"
         android:label="rank"
         tools:layout="@layout/fragment_rank" />
+    <fragment
+        android:id="@+id/calenderClear"
+        android:name="com.example.harue.CalenderClear"
+        android:label="fragment_calender_clear"
+        tools:layout="@layout/fragment_calender_clear" >
+        <action
+            android:id="@+id/action_calenderClear_to_navigation_calender"
+            app:destination="@id/navigation_calender" />
+    </fragment>
 </navigation>
