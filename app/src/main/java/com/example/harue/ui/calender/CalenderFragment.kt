@@ -28,10 +28,6 @@ class CalenderFragment : Fragment() {
         _binding = FragmentCalenderBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textNotifications
-        celenderViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
         return root
     }
 
