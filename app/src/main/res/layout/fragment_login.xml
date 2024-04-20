@@ -1,14 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".LoginFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/infoText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="23dp"
+        android:layout_margin="23dp"
+        android:labelFor="@id/emailEditText"
+        app:boxBackgroundColor="@color/white"
+        app:boxBackgroundMode="filled"
+        android:textColorHint="#A0A0A0"
+        app:hintTextColor="@color/tomato"
+        android:outlineAmbientShadowColor="@color/tomato"
+        app:cursorColor="@color/tomato"
+        app:boxStrokeColor="@color/tomato"
 
-</FrameLayout>
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="이메일"
+            android:inputType="textEmailAddress"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/emailLayout"
+        app:layout_constraintStart_toStartOf="@id/emailLayout"
+        app:layout_constraintEnd_toEndOf="@id/emailLayout"
+        android:layout_marginTop="18dp"
+        android:labelFor="@id/passwordEditText"
+        app:boxBackgroundMode="filled"
+        app:endIconMode="custom"
+        app:boxBackgroundColor="#F5F5F5"
+        android:textColorHint="#A0A0A0"
+        app:endIconTint="#A0A0A0"
+        app:hintTextColor="@color/tomato"
+        app:endIconDrawable="@drawable/ic_visibility"
+        app:endIconCheckable="true"
+        app:cursorColor="@color/tomato"
+        app:boxStrokeColor="@color/tomato"
+
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="비밀번호"
+            android:inputType="textPassword"
+            />
+        <!-- text-->
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/findEmailButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이메일 찾기"
+        android:textSize="12sp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintBottom_toBottomOf="@id/findPasswordButton"
+        app:layout_constraintEnd_toStartOf="@id/findPasswordButton"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@id/passwordLayout"
+
+        app:layout_constraintTop_toTopOf="@id/findPasswordButton" />
+
+    <TextView
+        android:id="@+id/findPasswordButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="회원가입"
+        android:textColor="#F6A723"
+        app:layout_constraintStart_toEndOf="@id/findEmailButton"
+        app:layout_constraintTop_toBottomOf="@id/passwordLayout"
+        app:layout_constraintEnd_toEndOf="@id/passwordLayout"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/loginButton"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/findPasswordButton"
+        android:layout_marginTop="52dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:background="@drawable/sp_rectangle_login"
+        android:text="로그인"
+        android:textSize="20sp"
+        android:shadowRadius="0"
+        android:textColor="@color/white"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
