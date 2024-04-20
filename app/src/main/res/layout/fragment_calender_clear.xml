@@ -13,13 +13,14 @@
         app:layout_constraintTop_toTopOf="parent">
         <ImageButton
             android:id="@+id/backButton"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back"
             app:layout_constraintTop_toTopOf="@id/TitlePanel"
             app:layout_constraintBottom_toBottomOf="@id/TitlePanel"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginLeft="14dp"
-            android:background="@color/gray"/>
+            android:background="@color/white"/>
         <ImageButton
             android:id="@+id/addMonth"
             android:layout_width="24dp"
@@ -58,20 +59,22 @@
             android:text="4월"/>
         <ImageView
             android:id="@+id/previousButton"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back"
             app:layout_constraintTop_toTopOf="@id/MonthPanel"
             app:layout_constraintBottom_toBottomOf="@+id/MonthPanel"
-            android:background="@color/gray"
+            android:background="@color/white"
             app:layout_constraintEnd_toStartOf="@+id/month"
             android:layout_marginRight="26dp"/>
         <ImageView
             android:id="@+id/nextButton"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_arrow"
+            android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="@id/MonthPanel"
             app:layout_constraintBottom_toBottomOf="@+id/MonthPanel"
-            android:background="@color/gray"
+            android:background="@color/white"
             app:layout_constraintStart_toEndOf="@+id/month"
             android:layout_marginLeft="26dp"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
