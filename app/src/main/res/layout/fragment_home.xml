@@ -106,7 +106,8 @@
                     app:layout_constraintStart_toStartOf="@id/rankingPanel01"
                     app:layout_constraintEnd_toEndOf="@id/rankingPanel01"
                     app:layout_constraintHorizontal_bias="0.18"
-                    android:background="@color/gray"/>
+                    android:src="@drawable/icon"
+                    android:background="@drawable/circle"/>
                 <TextView
                     android:id="@+id/rankName01"
                     android:layout_width="wrap_content"
@@ -168,7 +169,8 @@
                     app:layout_constraintStart_toStartOf="@id/rankingPanel02"
                     app:layout_constraintEnd_toEndOf="@id/rankingPanel02"
                     app:layout_constraintHorizontal_bias="0.18"
-                    android:background="@color/gray"/>
+                    android:src="@drawable/icon"
+                    android:background="@drawable/circle"/>
                 <TextView
                     android:id="@+id/rankName02"
                     android:layout_width="wrap_content"
@@ -230,7 +232,8 @@
                     app:layout_constraintStart_toStartOf="@id/rankingPanel03"
                     app:layout_constraintEnd_toEndOf="@id/rankingPanel03"
                     app:layout_constraintHorizontal_bias="0.18"
-                    android:background="@color/gray"/>
+                    android:src="@drawable/icon"
+                    android:background="@drawable/circle"/>
                 <TextView
                     android:id="@+id/rankName03"
                     android:layout_width="wrap_content"
