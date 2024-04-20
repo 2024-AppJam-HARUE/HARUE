@@ -5,12 +5,51 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".LoginFragment">
+    
+    <ImageView
+        android:id="@+id/iconImg"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="113dp"
+        />
+    <TextView
+        android:id="@+id/infoText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/iconImg"
+        app:layout_constraintStart_toStartOf="@id/iconImg"
+        app:layout_constraintEnd_toEndOf="@id/iconImg"
+        android:layout_marginTop="26dp"
+        android:text="일정을 공유함으로 생겨나는 행복"
+        android:textSize="20sp"
+        android:textColor="@color/gray"
+        android:fontFamily="@font/pretendard_medium"
+        app:layout_constraintBottom_toTopOf="@id/infoText2"
+        />
+
+    <TextView
+        android:id="@+id/infoText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/infoText1"
+        app:layout_constraintStart_toStartOf="@id/infoText1"
+        app:layout_constraintEnd_toEndOf="@id/infoText1"
+        android:text="하루애"
+        android:fontFamily="@font/pretendard_bold"
+        android:textColor="@color/tomato"
+        android:textSize="20sp"/>
+
+
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/emailLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/infoText"
+        app:layout_constraintTop_toBottomOf="@id/infoText2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginStart="23dp"
@@ -46,8 +85,8 @@
         android:labelFor="@id/passwordEditText"
         app:boxBackgroundMode="filled"
         app:endIconMode="custom"
-        app:boxBackgroundColor="#F5F5F5"
-        android:textColorHint="#A0A0A0"
+        app:boxBackgroundColor="@color/white"
+        android:textColorHint="@color/gray"
         app:endIconTint="#A0A0A0"
         app:hintTextColor="@color/tomato"
         app:endIconDrawable="@drawable/ic_visibility"
@@ -79,6 +118,8 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="@id/passwordLayout"
+        android:textColor="@color/gray"
+        android:fontFamily="@font/pretendard_medium"
 
         app:layout_constraintTop_toTopOf="@id/findPasswordButton" />
 
@@ -88,7 +129,8 @@
         android:layout_height="wrap_content"
         android:textSize="12sp"
         android:text="회원가입"
-        android:textColor="#F6A723"
+        android:textColor="@color/tomato"
+        android:fontFamily="@font/pretendard_bold"
         app:layout_constraintStart_toEndOf="@id/findEmailButton"
         app:layout_constraintTop_toBottomOf="@id/passwordLayout"
         app:layout_constraintEnd_toEndOf="@id/passwordLayout"
@@ -100,17 +142,17 @@
         android:id="@+id/loginButton"
         android:layout_width="0dp"
         android:layout_height="54dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/findPasswordButton"
-        android:layout_marginTop="52dp"
         android:layout_marginStart="36dp"
+        android:layout_marginTop="52dp"
         android:layout_marginEnd="36dp"
-        android:background="@drawable/sp_rectangle_login"
-        android:text="로그인"
-        android:textSize="20sp"
+        android:background="@drawable/sp_background_login"
         android:shadowRadius="0"
+        android:text="로그인"
         android:textColor="@color/white"
-        />
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/findPasswordButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
